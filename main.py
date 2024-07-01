@@ -10,7 +10,7 @@ import time
 from unidecode import unidecode
 
 # Construct the path to the chromedriver executable
-chrome_driver_path = "./chromedriver.exe"
+chrome_driver_path = "./chromedriver.exe" # Replace the path with actual path if chromedriver not in same directory
 
 chrome_options = ChromeOptions()
 chrome_options.add_argument("--disable-infobars")
