@@ -1,5 +1,8 @@
 # Python Review Bot
 
+## Description
+The function of this project was to automate the process of creating a fake Gmail account which would then go on to automatically rate a place on Google Maps with the selected number of stars. This is a failed project as is explained below.
+
 ## Installation
 run 'python install -r requirements.txt'
 
