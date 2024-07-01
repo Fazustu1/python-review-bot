@@ -26,7 +26,7 @@ def rate_review(driver, stars):
     star_element = driver.find_element(By.XPATH, star_xpath)
     star_element.click()
 
-def write_review(email, password, place_url, stars=5):
+def write_review(password, place_url, stars):
     try:
         driver.get(place_url)
         time.sleep(2)
@@ -162,7 +162,7 @@ def main():
 
     # Use the created Gmail account to rate a place
     place_url = "https://www.google.com/maps/place/PLACE_ID"  # Replace PLACE_ID with the actual place ID
-    write_review(f"{your_username}@gmail.com", your_password, place_url)
+    write_review(your_password, place_url, 5) # Replace "5" with the number of stars you want to rate, for example 1 to 5
 
 if __name__ == "__main__":
     main()
